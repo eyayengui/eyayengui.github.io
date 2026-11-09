@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Eya Yengui — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<style>
+  /* Same palette as the portfolio (tailwind.config.ts) */
+  :root {
+    --ink: #0B1020; --surface: #111827; --card: #1E293B;
+    --primary: #8B5CF6; --secondary: #06B6D4; --accent: #A5B4FC;
+    --text: #1E293B; --muted: #64748B; --line: #E2E8F0; --soft: #F5F3FF;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; }
+  body { font-family: Inter, sans-serif; color: var(--text); font-size: 8.6pt; line-height: 1.42;
+         -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #fff; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  header { background: var(--ink); color: #F8FAFC; padding: 9mm 12mm 7mm; position: relative; overflow: hidden; }
+  header::before { content: ""; position: absolute; width: 90mm; height: 90mm; right: -25mm; top: -45mm;
+                   background: radial-gradient(circle, rgba(139,92,246,.45), transparent 65%); }
+  header::after { content: ""; position: absolute; width: 70mm; height: 70mm; right: 35mm; bottom: -50mm;
+                  background: radial-gradient(circle, rgba(6,182,212,.30), transparent 65%); }
+  .head { display: flex; align-items: center; gap: 5mm; position: relative; z-index: 1; }
+  .badge { width: 15mm; height: 15mm; border-radius: 3.5mm; display: grid; place-items: center; font-weight: 800; font-size: 15pt;
+           background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff; flex-shrink: 0; }
+  h1 { font-size: 22pt; font-weight: 800; letter-spacing: -.3pt; line-height: 1.05; }
+  .role { margin-top: 1.4mm; font-size: 10pt; font-weight: 600; color: #C4B5FD; }
+  .contact { position: relative; z-index: 1; margin-top: 4.5mm; display: flex; flex-wrap: wrap; gap: 1.6mm 5mm; font-size: 7.9pt; color: #CBD5E1; }
+  .contact a { color: #E2E8F0; text-decoration: none; }
+  .contact span::before { content: "▸ "; color: var(--secondary); }
+  .bar { height: 1.2mm; background: linear-gradient(90deg, var(--primary), var(--secondary)); }
+
+  main { display: grid; grid-template-columns: 1fr 62mm; gap: 7mm; padding: 6.5mm 12mm 0; }
+  h2 { font-family: 'JetBrains Mono', monospace; font-size: 8pt; font-weight: 600; letter-spacing: 1.2pt; text-transform: uppercase;
+       color: var(--primary); display: flex; align-items: center; gap: 2mm; margin: 4.6mm 0 2.2mm; }
+  h2::after { content: ""; flex: 1; height: .3mm; background: linear-gradient(90deg, rgba(139,92,246,.45), rgba(6,182,212,0)); }
+  section:first-child h2 { margin-top: 0; }
+  p.lead { color: #334155; }
+
+  .item { margin-bottom: 3mm; break-inside: avoid; }
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 3mm; }
+  .item-title { font-weight: 700; font-size: 9.2pt; color: var(--ink); }
+  .item-title em { font-style: normal; font-weight: 600; color: var(--primary); }
+  .date { font-family: 'JetBrains Mono', monospace; font-size: 7.2pt; color: var(--muted); white-space: nowrap; }
+  .sub { font-size: 7.8pt; color: var(--muted); margin: .3mm 0 1mm; }
+  ul.b { list-style: none; }
+  ul.b li { position: relative; padding-left: 3.4mm; margin-bottom: .55mm; }
+  ul.b li::before { content: ""; position: absolute; left: .4mm; top: 1.55mm; width: 1.3mm; height: 1.3mm; border-radius: 50%;
+                    background: linear-gradient(135deg, var(--primary), var(--secondary)); }
+  .stack { margin-top: 1mm; font-family: 'JetBrains Mono', monospace; font-size: 6.9pt; color: #0E7490; }
+  b { font-weight: 600; color: var(--ink); }
+
+  aside { padding-bottom: 6mm; }
+  .group { margin-bottom: 2.6mm; }
+  .group-title { font-weight: 700; font-size: 7.9pt; color: var(--ink); margin-bottom: 1.1mm; }
+  .chips { display: flex; flex-wrap: wrap; gap: 1mm; }
+  .chip { font-size: 6.9pt; padding: .45mm 1.7mm; border-radius: 1.4mm; background: var(--soft); color: #5B21B6; border: .25mm solid #DDD6FE; }
+  .chip.c { background: #ECFEFF; color: #0E7490; border-color: #A5F3FC; }
+  .edu { margin-bottom: 2.4mm; }
+  .edu .t { font-weight: 700; color: var(--ink); font-size: 8.2pt; }
+  .edu .s { color: var(--muted); font-size: 7.6pt; }
+  .kv { display: flex; justify-content: space-between; font-size: 7.9pt; margin-bottom: .7mm; }
+  .kv span:last-child { color: var(--muted); }
+  .cert { font-size: 7.8pt; margin-bottom: .7mm; padding-left: 3.4mm; position: relative; }
+  .cert::before { content: "✓"; position: absolute; left: 0; color: var(--secondary); font-weight: 700; }
+  .qr { margin-top: 3mm; padding: 2.6mm; border-radius: 2.5mm; background: var(--ink); color: #E2E8F0; font-size: 7.4pt; }
+  .qr .mono { color: var(--accent); font-size: 7.6pt; }
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <div class="badge">EY</div>
+    <div>
+      <h1>Eya Yengui</h1>
+      <div class="role">Ingénieure Cloud &amp; DevOps · Kubernetes · Développeuse Full-Stack</div>
+    </div>
+  </div>
+  <div class="contact">
+    <span>Tunis, Tunisie · Mobilité Lyon</span>
+    <span><a href="mailto:yenguieya6@gmail.com">yenguieya6@gmail.com</a></span>
+    <span><a href="https://eyayengui.github.io">eyayengui.github.io</a></span>
+    <span><a href="https://github.com/eyayengui">github.com/eyayengui</a></span>
+    <span><a href="https://www.linkedin.com/in/eya-yengui-423b60250/">linkedin.com/in/eya-yengui-423b60250</a></span>
+  </div>
+</header>
+<div class="bar"></div>
+
+<main>
+  <div>
+    <section>
+      <h2>Profil</h2>
+      <p class="lead">Ingénieure informatique spécialisée <b>Cloud Computing &amp; DevOps</b> (ESPRIT), avec une expérience pratique des clusters
+        <b>Azure AKS</b>, des déploiements Kubernetes, de l'automatisation <b>CI/CD</b>, de l'observabilité et du <b>chaos engineering</b>.
+        Également développeuse full-stack (Angular, Spring Boot, Laravel, Ionic) : je conçois, développe et mets en production des applications web et mobiles.
+        Disponible pour un CDI à Lyon.</p>
+    </section>
+
+    <section>
+      <h2>Expérience</h2>
+      <div class="item">
+        <div class="item-head"><div class="item-title">INSOMEA — <em>Ingénieure DevOps &amp; Cloud (stage PFE)</em></div><div class="date">Fév. – Août 2026</div></div>
+        <div class="sub">Tunis · Projet : ChaosOps, plateforme de chaos engineering intelligente sur Azure AKS</div>
+        <ul class="b">
+          <li>Création et configuration de clusters <b>AKS</b> ; déploiement d'applications conteneurisées (Docker, ACR, namespaces, Ingress, autoscaling).</li>
+          <li>Pipelines <b>GitHub Actions</b> : build des images Docker, publication dans ACR et déploiement sur AKS.</li>
+          <li>Expériences de résilience avec <b>Chaos Mesh</b> (stress CPU / mémoire, pannes de pods) générées par IA (<b>LLM + MCP</b>).</li>
+          <li>Supervision <b>Prometheus</b>, Grafana et Azure Monitor ; rapports d'analyse post-injection automatisés (PDF).</li>
+          <li>Développement de la plateforme : API <b>Spring Boot</b> (client Java Kubernetes) et tableau de bord <b>Angular</b>.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="item-head"><div class="item-title">INSOMEA — <em>Stagiaire Cloud &amp; Infrastructure</em></div><div class="date">Juin – Août 2025</div></div>
+        <ul class="b">
+          <li>Architecture réseau Azure <b>Hub-and-Spoke</b> : VNets, peering, NSG, Azure Firewall et Bastion.</li>
+          <li>Déploiement d'AKS et ACR ; Key Vault, Workload Identity, Private Endpoints et DNS privé ; infrastructure automatisée avec <b>Terraform</b>.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="item-head"><div class="item-title">Web Vue — <em>Développeuse Full-Stack (stage PFE licence)</em></div><div class="date">Fév. – Mai 2023</div></div>
+        <div class="sub">Sfax · Projet : Taxi Cross, plateforme de réservation de taxi (en binôme, Scrum)</div>
+        <ul class="b">
+          <li>Deux applications mobiles <b>Ionic / Angular / Capacitor</b> (clients et chauffeurs), API REST <b>Laravel</b> et site d'administration.</li>
+          <li>Temps réel par WebSockets (<b>Soketi</b>), carte Leaflet, vérification SMS (OTP), parrainage, soldes et tableau de bord statistique.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projets</h2>
+      <div class="item">
+        <div class="item-head"><div class="item-title">Saldae Institute &amp; EDEHN — <em>sites web en production</em></div><div class="date">2026</div></div>
+        <ul class="b">
+          <li>Développement full-stack <b>Angular + Spring Boot</b> (Spring Security, MySQL) de deux sites : saldae-institute.com et edehn.fr.</li>
+          <li>Mise en production sur <b>Microsoft Azure</b> (Saldae) et sur un <b>VPS Linux</b> avec Nginx et service systemd (EDEHN).</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="item-head"><div class="item-title">Cloud privé OpenStack — <em>projet ESPRIT</em></div><div class="date">2024 – 2025</div></div>
+        <ul class="b">
+          <li>Infrastructure OpenStack (Keystone, Nova, Neutron, Cinder, Swift) avec <b>Terraform</b> et <b>Ansible</b> ; supervision Prometheus et Grafana.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="item-head"><div class="item-title">IjaNahkiw — <em>plateforme de santé mentale (ESPRIT)</em></div><div class="date">2024</div></div>
+        <ul class="b">
+          <li>Application <b>Symfony</b> en équipe : consultations avec thérapeutes, fiches médicales (PDF), forum, chatbot, temps réel avec Mercure.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <aside>
+    <section>
+      <h2>Compétences</h2>
+      <div class="group"><div class="group-title">Cloud &amp; conteneurs</div><div class="chips">
+        <span class="chip">Azure</span><span class="chip">AKS</span><span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">ACR</span><span class="chip">OpenStack</span></div></div>
+      <div class="group"><div class="group-title">CI/CD &amp; IaC</div><div class="chips">
+        <span class="chip c">GitHub Actions</span><span class="chip c">Terraform</span><span class="chip c">Ansible</span><span class="chip c">Git</span><span class="chip c">Bash</span><span class="chip c">Linux</span></div></div>
+      <div class="group"><div class="group-title">Observabilité &amp; résilience</div><div class="chips">
+        <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Azure Monitor</span><span class="chip">Chaos Mesh</span></div></div>
+      <div class="group"><div class="group-title">Réseaux &amp; sécurité</div><div class="chips">
+        <span class="chip c">VNets / NSG</span><span class="chip c">Azure Firewall</span><span class="chip c">Key Vault</span><span class="chip c">Workload Identity</span><span class="chip c">TCP/IP · DNS</span></div></div>
+      <div class="group"><div class="group-title">Développement</div><div class="chips">
+        <span class="chip">Angular</span><span class="chip">TypeScript</span><span class="chip">Ionic</span><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">Symfony</span><span class="chip">Python</span><span class="chip">MySQL</span><span class="chip">API REST</span></div></div>
+    </section>
+
+    <section>
+      <h2>Formation</h2>
+      <div class="edu"><div class="t">Diplôme d'ingénieur en informatique</div><div class="s">Cloud Computing &amp; DevOps — ESPRIT, Tunis</div><div class="date">2023 – 2026</div></div>
+      <div class="edu"><div class="t">Licence en informatique — Big Data</div><div class="s">ISIMS, Université de Sfax</div><div class="date">2020 – 2023</div></div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="cert">Microsoft Azure Fundamentals (AZ-900)</div>
+      <div class="cert">Cisco CCNA</div>
+      <div class="cert">Cisco Network Security</div>
+      <div class="cert">AWS Fundamentals</div>
+    </section>
+
+    <section>
+      <h2>Langues</h2>
+      <div class="kv"><span>Arabe</span><span>Langue maternelle</span></div>
+      <div class="kv"><span>Français</span><span>Courant</span></div>
+      <div class="kv"><span>Anglais</span><span>Courant</span></div>
+      <div class="kv"><span>Turc</span><span>Avancé</span></div>
+    </section>
+
+    <div class="qr">Portfolio, démos vidéo et projets :<br /><span class="mono">eyayengui.github.io</span></div>
+  </aside>
+</main>
+</body>
+</html>
