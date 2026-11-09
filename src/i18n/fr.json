@@ -1,0 +1,373 @@
+{
+  "meta": {
+    "title": "Eya Yengui — Ingénieure Cloud & DevOps | Développeuse Full-Stack",
+    "description": "Portfolio d'Eya Yengui, ingénieure Cloud Computing & DevOps et développeuse logiciel full-stack : Kubernetes, Azure, CI/CD, automatisation, développement web et mobile."
+  },
+  "a11y": {
+    "skip": "Aller au contenu",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue",
+    "mainNav": "Navigation principale",
+    "close": "Fermer",
+    "github": "Profil GitHub",
+    "linkedin": "Profil LinkedIn"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "resume": "CV",
+    "contact": "Contact"
+  },
+  "cv": {
+    "download": "Télécharger le CV",
+    "view": "Voir le CV",
+    "soon": "CV bientôt disponible",
+    "missingTitle": "CV bientôt disponible",
+    "missingText": "La version PDF du CV sera publiée ici très prochainement.",
+    "devHint": "Ajoutez le fichier public/cv/Eya_Yengui_CV.pdf — les boutons s'activent automatiquement."
+  },
+  "common": {
+    "comingSoon": "Bientôt disponible",
+    "linkSoon": "Lien bientôt disponible",
+    "screenshotSoon": "Capture d'écran à venir",
+    "demoVideo": "Vidéo de démo",
+    "placeholder": "Emplacement réservé",
+    "toComplete": "À compléter",
+    "backToProjects": "Retour aux projets",
+    "backHome": "Retour à l'accueil",
+    "notFoundTitle": "Projet introuvable",
+    "notFoundText": "Ce projet n'existe pas ou a été déplacé.",
+    "devHint": "Note développeur"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "title1": "Ingénieure Cloud & DevOps",
+    "title2": "Développeuse Logiciel Full-Stack",
+    "subtitle": "Je conçois, développe, automatise et déploie des applications évolutives et des solutions cloud-native.",
+    "description": "Ingénieure Cloud Computing & DevOps, expérimentée dans le développement d'applications full-stack, l'orchestration Kubernetes, l'infrastructure cloud Azure, l'automatisation CI/CD et le chaos engineering sur Kubernetes. Passionnée par la création de logiciels fiables et la transformation d'idées en solutions prêtes pour la production.",
+    "badges": ["Ingénierie Cloud", "DevOps & Automatisation", "Développement Full-Stack", "Kubernetes", "Chaos Engineering"],
+    "ctaProjects": "Voir mes projets",
+    "ctaContact": "Me contacter",
+    "scroll": "Défiler pour explorer"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "title": "Développeuse logiciel avec un état d'esprit d'ingénieure cloud",
+    "subtitle": "J'associe l'expertise en développement logiciel aux pratiques de l'ingénierie cloud et du DevOps — de la première ligne de code jusqu'à la production.",
+    "intro": {
+      "title": "Présentation",
+      "text": "Je m'appelle Eya Yengui. J'ai travaillé sur des applications full-stack, des applications web et mobiles, de l'infrastructure cloud, Kubernetes, le chaos engineering, l'intégration continue, la livraison continue, l'automatisation, la supervision et des déploiements en production."
+    },
+    "academic": {
+      "title": "Parcours académique",
+      "text": "Je suis titulaire d'un diplôme d'ingénieur spécialisé en Cloud Computing & DevOps, avec une formation académique en Big Data."
+    },
+    "specialization": {
+      "title": "Spécialisation technique",
+      "text": "Mon profil se situe à la croisée du développement logiciel et des opérations cloud.",
+      "items": ["Développement full-stack", "Infrastructure cloud", "Kubernetes & CI/CD", "Automatisation & supervision"]
+    },
+    "interests": {
+      "title": "Intérêts professionnels",
+      "text": "Mon objectif est de contribuer à des projets techniques innovants en :",
+      "items": ["Développement logiciel", "Ingénierie Cloud", "DevOps", "Platform Engineering"]
+    },
+    "facts": {
+      "location": "Localisation",
+      "locationValue": "Tunisie",
+      "degree": "Diplôme",
+      "degreeValue": "Ingénieur — Cloud Computing & DevOps",
+      "background": "Formation académique",
+      "backgroundValue": "Big Data"
+    }
+  },
+  "skills": {
+    "eyebrow": "Compétences",
+    "title": "Boîte à outils technique",
+    "subtitle": "Les technologies que j'utilise pour concevoir, livrer et exploiter des logiciels — des interfaces utilisateur aux clusters Kubernetes.",
+    "groups": {
+      "frontend": { "title": "Développement Frontend", "text": "Interfaces responsives, typées et maintenables." },
+      "backend": { "title": "Développement Backend", "text": "API, services temps réel et logique métier." },
+      "cloud": { "title": "Cloud & DevOps", "text": "Conteneurs, orchestration, IaC et pipelines de livraison." },
+      "infra": { "title": "Infrastructure & Supervision", "text": "Cloud privé, observabilité et tests de résilience." },
+      "data": { "title": "Data & Bases de données", "text": "Bases de données relationnelles et analyse de données." },
+      "tools": { "title": "Outils de développement", "text": "Flux de travail d'ingénierie au quotidien." }
+    },
+    "terms": {
+      "REST APIs": "API REST",
+      "Kubernetes Monitoring": "Supervision Kubernetes",
+      "Data Analysis": "Analyse de données"
+    }
+  },
+  "projects": {
+    "eyebrow": "Projets",
+    "title": "Réalisations d'ingénierie",
+    "subtitle": "Plateformes full-stack, infrastructures cloud et projets d'automatisation que j'ai conçus, développés et déployés.",
+    "filtersLabel": "Filtrer les projets par catégorie",
+    "filters": {
+      "all": "Tous les projets",
+      "web": "Développement Web",
+      "cloud": "Cloud & DevOps"
+    },
+    "viewDetails": "Voir les détails",
+    "github": "GitHub",
+    "liveDemo": "Démo en ligne",
+    "items": {
+      "intelligent-chaos-engineering": {
+        "title": "Chaos Engineering intelligent sur AKS",
+        "category": "Cloud / DevOps / IA",
+        "short": "Du chaos engineering sur Azure Kubernetes Service, orchestré par un LLM via un serveur Model Context Protocol (MCP).",
+        "description": "Une solution de chaos engineering intelligente intégrant Kubernetes, Chaos Mesh, un LLM et un serveur Model Context Protocol (MCP). Elle exécute des expériences de pannes contrôlées sur Azure Kubernetes Service et observe le comportement du système avec Prometheus et Azure Monitor.",
+        "features": [
+          "Expérimentation de chaos sur Kubernetes",
+          "Simulation de pannes de pods",
+          "Tests de stress CPU et mémoire",
+          "Simulation de latence réseau",
+          "Supervision avec Prometheus et Azure Monitor",
+          "Orchestration intelligente des scénarios avec un LLM et MCP"
+        ],
+        "workflow": [
+          { "title": "Planifier", "text": "Scénario via LLM + MCP" },
+          { "title": "Injecter", "text": "Expériences Chaos Mesh" },
+          { "title": "Stresser", "text": "Pods, CPU, mémoire, réseau" },
+          { "title": "Observer", "text": "Prometheus & Azure Monitor" }
+        ]
+      },
+      "openstack-cloud-infrastructure": {
+        "title": "Infrastructure Cloud OpenStack",
+        "category": "Cloud / Infrastructure / DevOps",
+        "short": "Une infrastructure cloud sur OpenStack, provisionnée avec Terraform, configurée avec Ansible et supervisée avec Prometheus et Grafana.",
+        "description": "Conception et automatisation d'une infrastructure cloud avec OpenStack, Terraform et Ansible : provisionnement de l'infrastructure, automatisation de la configuration, gestion des ressources cloud, collecte de métriques et tableaux de bord de supervision.",
+        "features": [
+          "Provisionnement de l'infrastructure",
+          "Automatisation de la configuration",
+          "Gestion des ressources cloud",
+          "Collecte de métriques",
+          "Tableaux de bord de supervision de l'infrastructure"
+        ],
+        "workflow": [
+          { "title": "Provisionner", "text": "Terraform sur OpenStack" },
+          { "title": "Configurer", "text": "Automatisation Ansible" },
+          { "title": "Collecter", "text": "Métriques Prometheus" },
+          { "title": "Visualiser", "text": "Tableaux de bord Grafana" }
+        ]
+      },
+      "saldae-institute": {
+        "title": "Site web Saldae Institute",
+        "category": "Développement Web / Déploiement Cloud",
+        "short": "Un site web professionnel déployé sur Microsoft Azure.",
+        "description": "Un site web professionnel pour Saldae Institute, déployé et hébergé sur Microsoft Azure.",
+        "features": ["Site web public professionnel", "Déploiement sur Microsoft Azure", "En ligne en production"],
+        "role": "",
+        "deployment": "Déployé sur Microsoft Azure."
+      },
+      "edehn": {
+        "title": "Site web EDEHN",
+        "category": "Développement Web / Déploiement",
+        "short": "Le site de l'EDEHN (Équipe d'Économie Le Havre Normandie), déployé sur un VPS.",
+        "description": "Le site web de l'EDEHN — Équipe d'Économie Le Havre Normandie, une équipe de recherche en économie — déployé et hébergé sur un VPS (serveur privé virtuel).",
+        "features": ["Application web", "Déploiement sur un VPS"],
+        "role": "",
+        "deployment": "Déployé sur un VPS Linux : build Angular servi par Nginx, qui sert aussi de reverse proxy vers l'API Spring Boot exécutée en service systemd."
+      },
+      "taxi-cross": {
+        "title": "Taxi Cross — Plateforme de réservation de taxi",
+        "category": "Développement Mobile & Web",
+        "short": "Une plateforme bilatérale de réservation de taxi : deux applications mobiles Ionic (clients et chauffeurs), une API REST Laravel, des WebSockets temps réel et un site d'administration.",
+        "description": "Taxi Cross est une plateforme bilatérale qui facilite la prise de taxi pour les clients et permet aux chauffeurs de trouver des passagers rapidement. Elle a été réalisée comme projet de fin d'études de ma licence en Big Data et analyse de données (ISIMS, Université de Sfax) lors d'un stage chez Web Vue, agence de développement à Sfax. Elle comprend une application mobile client, une application mobile chauffeur et un site d'administration, reposant sur une API REST Laravel et un serveur WebSocket Soketi pour le temps réel.",
+        "features": [
+          "Application chauffeur : accepter ou annuler les demandes, voir les clients sur la carte, suivre l'itinéraire et appeler le client",
+          "Application client : choix de la destination, course simple (+2 DT) ou urgente (+3 DT), recherche avec compte à rebours de 3 minutes",
+          "Inscription avec vérification par code SMS (OTP)",
+          "Demandes de course et mises à jour en temps réel via WebSockets (Soketi)",
+          "Carte interactive avec Leaflet et OpenStreetMap",
+          "Solde du chauffeur, historique des recharges et programme de parrainage (solde crédité tous les 10 parrainages)",
+          "Historique des courses et réclamations pour clients et chauffeurs",
+          "Site d'administration : gestion des chauffeurs, clients, courses, réclamations et recharges, avec tableau de bord statistique"
+        ],
+        "workflow": [
+          {
+            "title": "Réserver",
+            "text": "Le client choisit sa destination et le type de course"
+          },
+          {
+            "title": "Diffuser",
+            "text": "Demande envoyée aux chauffeurs via WebSockets"
+          },
+          {
+            "title": "Accepter",
+            "text": "Le chauffeur accepte, appelle le client et suit l'itinéraire"
+          },
+          {
+            "title": "Gérer",
+            "text": "Tableau de bord admin, soldes et réclamations"
+          }
+        ],
+        "role": "Projet de fin d'études de ma licence en Big Data (ISIMS Sfax), réalisé en binôme avec Yosri Njeh lors d'un stage chez Web Vue (février–mai 2023), en Scrum : conception UML, applications mobiles, API REST et site d'administration."
+      },
+      "ija-nahkiw": {
+        "title": "IjaNahkiw — Plateforme de santé mentale",
+        "category": "Développement Web Full-Stack",
+        "short": "Une plateforme Symfony qui met en relation patients et thérapeutes : consultations, fiches médicales, activités, forum et chatbot.",
+        "description": "IjaNahkiw (« viens, on parle ») est une plateforme web de santé mentale et de bien-être développée avec Symfony dans le cadre d'un projet d'équipe à ESPRIT. Les patients réservent des consultations avec des thérapeutes, suivent des programmes et activités, répondent à des questionnaires et échangent avec un chatbot ; thérapeutes et administrateurs gèrent le tout depuis un back-office.",
+        "features": [
+          "Consultations avec les thérapeutes : calendrier, recherche et tri",
+          "Fiches médicales avec export PDF",
+          "Programmes, activités et exercices de bien-être",
+          "Forum communautaire : publications, commentaires et likes",
+          "Questionnaires et chatbot d'accompagnement",
+          "Tableau de bord admin avec statistiques et graphiques",
+          "Inscription avec vérification d'e-mail, réinitialisation du mot de passe et reCAPTCHA",
+          "Mises à jour en temps réel avec Mercure"
+        ],
+        "workflow": [
+          { "title": "Inscription", "text": "Compte vérifié" },
+          { "title": "Choix", "text": "Thérapeute et programme" },
+          { "title": "Consultation", "text": "Réserver une séance" },
+          { "title": "Suivi", "text": "Fiches et activités" }
+        ],
+        "role": "Projet d'équipe (Projet Intégré) à ESPRIT, réalisé avec cinq autres étudiants."
+      },
+      "tp-foyer": {
+        "title": "Gestion des foyers universitaires ESPRIT",
+        "category": "Développement Back-End",
+        "short": "Une API REST Spring Boot réalisée à ESPRIT pour gérer universités, foyers, chambres, étudiants et réservations.",
+        "description": "Réalisée à ESPRIT, une API REST Spring Boot en couches (contrôleurs, services, repositories) pour gérer les foyers universitaires : universités, foyers, blocs, chambres, étudiants et réservations de chambres, avec persistance MySQL via Spring Data JPA.",
+        "features": [
+          "Endpoints REST pour universités, foyers, blocs et chambres",
+          "Gestion des étudiants et des réservations",
+          "Types de chambres et relations entre entités JPA",
+          "Architecture en couches : contrôleur → service → repository"
+        ],
+        "workflow": [
+          { "title": "Contrôleur", "text": "Endpoints REST" },
+          { "title": "Service", "text": "Logique métier" },
+          { "title": "Repository", "text": "Spring Data JPA" },
+          { "title": "Base de données", "text": "MySQL" }
+        ],
+        "role": "Projet académique à ESPRIT (École d'ingénieurs) : conception et développement de l'API back-end."
+      },
+      "housing-soa": {
+        "title": "Services web logements et rendez-vous",
+        "category": "SOA / Services Web",
+        "short": "Des services REST JAX-RS pour gérer des logements et des rendez-vous de visite.",
+        "description": "Une application Java orientée services qui expose des services web RESTful avec JAX-RS pour gérer des logements et des rendez-vous de visite, avec des couches ressources et métier séparées.",
+        "features": [
+          "Ressources REST CRUD pour les logements",
+          "Ressources de prise de rendez-vous",
+          "Couches ressources et métier séparées",
+          "Build Maven"
+        ]
+      },
+      "airport-management": {
+        "title": "Gestion d'aéroport",
+        "category": "Développement logiciel (.NET)",
+        "short": "Une application C# .NET qui modélise vols, avions, passagers et personnel.",
+        "description": "Une solution C# .NET découpée en un noyau applicatif (domaine, interfaces, services) et une interface console. Elle modélise vols, avions, passagers, voyageurs et personnel, et interroge les données de vols avec LINQ et des méthodes d'extension.",
+        "features": [
+          "Modèle de domaine : vols, avions, passagers, personnel",
+          "Requêtes sur les vols avec LINQ",
+          "Interfaces, services et méthodes d'extension",
+          "Solution en couches : ApplicationCore + interface console"
+        ]
+      }
+    }
+  },
+  "details": {
+    "overview": "Présentation",
+    "features": "Fonctionnalités clés",
+    "tech": "Stack technique",
+    "workflow": "Flux de travail",
+    "gallery": "Captures de l'application",
+    "architecture": "Architecture",
+    "video": "Démonstration vidéo",
+    "role": "Rôle & contributions",
+    "deployment": "Déploiement",
+    "galleryPlaceholder": "Capture de l'application",
+    "architecturePlaceholder": "Schéma d'architecture",
+    "videoPlaceholder": "Vidéo de démonstration",
+    "visit": "Visiter le site",
+    "category": "Catégorie",
+    "others": "Autres projets"
+  },
+  "demos": {
+    "eyebrow": "Démos en ligne",
+    "title": "Découvrez mes réalisations",
+    "subtitle": "Des sites web réels que j'ai développés et déployés — ouvrez-les et explorez-les en direct.",
+    "visit": "Visiter le site",
+    "preview": "Aperçu plein écran",
+    "watch": "Voir la démo",
+    "details": "Détails du projet",
+    "iframeNote": "Aperçu en direct — certains sites bloquent l'intégration. Si l'aperçu reste vide, ouvrez directement le site.",
+    "noPreview": "Aucun aperçu disponible pour le moment."
+  },
+  "experience": {
+    "eyebrow": "Expérience",
+    "title": "Parcours professionnel",
+    "subtitle": "Une expérience d'ingénierie concrète entre logiciel, cloud et DevOps.",
+    "related": "Projet associé",
+    "items": {
+      "insomea": {
+        "role": "Stage d'ingénieur (PFE) — Cloud & DevOps",
+        "description": "Conception et développement de ChaosOps, une plateforme de chaos engineering intelligente pour Azure Kubernetes Service.",
+        "highlights": [
+          "Expériences de chaos sur Azure AKS avec Chaos Mesh",
+          "Scénarios de stress CPU, mémoire et panne de pods",
+          "Supervision Prometheus et tableaux de bord de métriques",
+          "Rapports d'analyse post-injection automatisés (PDF)",
+          "API Spring Boot avec le client Java Kubernetes",
+          "Tableau de bord Angular"
+        ]
+      }
+    }
+  },
+  "resume": {
+    "eyebrow": "CV",
+    "title": "Mon CV",
+    "subtitle": "Un aperçu concis de ma formation et de mes spécialités. Téléchargez la version PDF complète ci-dessous.",
+    "preview": "Aperçu",
+    "education": "Formation",
+    "educationItems": [
+      "Diplôme d'ingénieur — spécialité Cloud Computing & DevOps",
+      "Formation académique en Big Data"
+    ],
+    "specialties": "Spécialités principales",
+    "specialtyItems": ["Ingénierie Cloud (Azure)", "Kubernetes & conteneurs", "CI/CD & automatisation", "Développement full-stack", "Chaos engineering"],
+    "experience": "Expérience",
+    "experienceItem": "INSOMEA — Stage d'ingénieur (Chaos Engineering sur AKS)"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Construisons ensemble des projets innovants.",
+    "subtitle": "Ouverte aux échanges sur des opportunités en développement logiciel, ingénierie Cloud, DevOps et Platform Engineering.",
+    "email": "E-mail",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "Localisation",
+    "locationValue": "Tunisie",
+    "opportunities": "Opportunités professionnelles",
+    "opportunitiesValue": "Développement logiciel · Cloud · DevOps · Platform Engineering",
+    "form": {
+      "title": "Envoyez-moi un message",
+      "name": "Votre nom",
+      "subject": "Objet",
+      "message": "Message",
+      "namePlaceholder": "Jeanne Dupont",
+      "subjectPlaceholder": "Opportunité, projet, question…",
+      "messagePlaceholder": "Bonjour Eya, …",
+      "submit": "Ouvrir dans ma messagerie",
+      "note": "Ce bouton ouvre votre application de messagerie avec le message pré-rempli — rien n'est envoyé depuis ce site.",
+      "disabled": "L'adresse e-mail sera ajoutée prochainement."
+    }
+  },
+  "footer": {
+    "tagline": "Ingénieure Cloud & DevOps · Développeuse Logiciel Full-Stack",
+    "rights": "Tous droits réservés.",
+    "built": "Réalisé avec React, TypeScript, Tailwind CSS & Motion.",
+    "top": "Retour en haut"
+  }
+}

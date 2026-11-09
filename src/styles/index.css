@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-ink font-sans text-fg antialiased;
+    background-color: #0b1020;
+  }
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+  ::selection {
+    background: rgba(139, 92, 246, 0.4);
+    color: #f8fafc;
+  }
+  :focus-visible {
+    outline: 2px solid #a5b4fc;
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass {
+    background: linear-gradient(180deg, rgba(30, 41, 59, 0.62), rgba(17, 24, 39, 0.5));
+    border: 1px solid rgba(51, 65, 85, 0.7);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_20px_50px_-20px_rgba(139,92,246,0.45)];
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(90deg, #a5b4fc, #8b5cf6, #06b6d4, #a5b4fc);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-x 8s ease infinite;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl px-5 py-3 text-sm font-semibold transition-all duration-300;
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-white shadow-[0_10px_30px_-10px_rgba(139,92,246,0.7)] hover:-translate-y-0.5 hover:shadow-[0_14px_40px_-8px_rgba(6,182,212,0.55)];
+  }
+  .btn-outline {
+    @apply border border-line bg-surface/60 text-fg hover:-translate-y-0.5 hover:border-accent/60 hover:bg-card/80;
+  }
+  .btn-ghost {
+    @apply text-muted hover:bg-card/60 hover:text-fg;
+  }
+  .btn-disabled {
+    @apply cursor-not-allowed border border-dashed border-line bg-surface/40 text-muted;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-line/80 bg-surface/70 px-3 py-1 font-mono text-xs text-accent;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-secondary;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  }
+
+  /* Cursor-following spotlight on cards (set --x / --y from JS). */
+  .spotlight {
+    position: relative;
+    isolation: isolate;
+  }
+  .spotlight::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: radial-gradient(400px circle at var(--x, 50%) var(--y, 50%), rgba(139, 92, 246, 0.14), transparent 45%);
+  }
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+
+  .placeholder-stripes {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(51, 65, 85, 0.25) 0 12px,
+      rgba(17, 24, 39, 0.25) 12px 24px
+    );
+  }
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

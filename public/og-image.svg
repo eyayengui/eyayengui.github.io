@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A5B4FC"/>
+      <stop offset=".5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="v" cx=".15" cy=".1" r=".6">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx=".9" cy=".9" r=".6">
+      <stop offset="0" stop-color="#06B6D4" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0B1020"/>
+  <rect width="1200" height="630" fill="url(#v)"/>
+  <rect width="1200" height="630" fill="url(#c)"/>
+  <text x="90" y="150" font-family="JetBrains Mono, monospace" font-size="30" fill="#06B6D4">EY.</text>
+  <text x="90" y="300" font-family="Inter, Arial, sans-serif" font-size="88" font-weight="800" fill="#F8FAFC">Eya Yengui</text>
+  <text x="90" y="390" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" fill="url(#g)">Cloud &amp; DevOps Engineer</text>
+  <text x="90" y="460" font-family="Inter, Arial, sans-serif" font-size="36" fill="#94A3B8">Full-Stack Software Developer</text>
+  <text x="90" y="550" font-family="JetBrains Mono, monospace" font-size="24" fill="#A5B4FC">Azure · Kubernetes · CI/CD · Terraform · Angular</text>
+</svg>

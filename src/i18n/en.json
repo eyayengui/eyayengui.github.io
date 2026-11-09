@@ -1,0 +1,368 @@
+{
+  "meta": {
+    "title": "Eya Yengui — Cloud & DevOps Engineer | Full-Stack Developer",
+    "description": "Portfolio of Eya Yengui, Cloud Computing & DevOps Engineer and Full-Stack Software Developer: Kubernetes, Azure, CI/CD, automation, web and mobile development."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "mainNav": "Main navigation",
+    "close": "Close",
+    "github": "GitHub profile",
+    "linkedin": "LinkedIn profile"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "cv": {
+    "download": "Download CV",
+    "view": "View CV",
+    "soon": "CV coming soon",
+    "missingTitle": "CV available soon",
+    "missingText": "The PDF version of the resume will be published here shortly.",
+    "devHint": "Add the file at public/cv/Eya_Yengui_CV.pdf — the buttons activate automatically."
+  },
+  "common": {
+    "comingSoon": "Coming soon",
+    "linkSoon": "Link coming soon",
+    "screenshotSoon": "Screenshot coming soon",
+    "demoVideo": "Demo video",
+    "placeholder": "Placeholder",
+    "toComplete": "To be completed",
+    "backToProjects": "Back to projects",
+    "backHome": "Back to home",
+    "notFoundTitle": "Project not found",
+    "notFoundText": "This project doesn't exist or has been moved.",
+    "devHint": "Dev hint"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "title1": "Cloud & DevOps Engineer",
+    "title2": "Full-Stack Software Developer",
+    "subtitle": "I design, develop, automate, and deploy scalable applications and cloud-native solutions.",
+    "description": "Cloud Computing & DevOps Engineer experienced in full-stack application development, Kubernetes orchestration, Azure cloud infrastructure, CI/CD automation, and chaos engineering on Kubernetes. Passionate about building reliable software and transforming ideas into production-ready solutions.",
+    "badges": ["Cloud Engineering", "DevOps & Automation", "Full-Stack Development", "Kubernetes", "Chaos Engineering"],
+    "ctaProjects": "View My Projects",
+    "ctaContact": "Contact Me",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Software developer with a cloud engineer's mindset",
+    "subtitle": "I combine software development expertise with cloud engineering and DevOps practices — from the first line of code to production.",
+    "intro": {
+      "title": "Introduction",
+      "text": "My name is Eya Yengui. I have worked on full-stack applications, web and mobile applications, cloud infrastructure, Kubernetes, chaos engineering, continuous integration, continuous delivery, automation, monitoring, and production deployments."
+    },
+    "academic": {
+      "title": "Academic background",
+      "text": "I hold an engineering degree specializing in Cloud Computing & DevOps, built on an academic background in Big Data."
+    },
+    "specialization": {
+      "title": "Technical specialization",
+      "text": "My profile sits at the intersection of software development and cloud operations.",
+      "items": ["Full-stack development", "Cloud infrastructure", "Kubernetes & CI/CD", "Automation & monitoring"]
+    },
+    "interests": {
+      "title": "Professional interests",
+      "text": "My objective is to contribute to innovative technical projects in:",
+      "items": ["Software Development", "Cloud Engineering", "DevOps", "Platform Engineering"]
+    },
+    "facts": {
+      "location": "Location",
+      "locationValue": "Tunisia",
+      "degree": "Degree",
+      "degreeValue": "Engineering — Cloud Computing & DevOps",
+      "background": "Academic background",
+      "backgroundValue": "Big Data"
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Technical toolbox",
+    "subtitle": "The technologies I use to build, ship and operate software — from user interfaces to Kubernetes clusters.",
+    "groups": {
+      "frontend": { "title": "Frontend Development", "text": "Responsive, typed and maintainable interfaces." },
+      "backend": { "title": "Backend Development", "text": "APIs, real-time services and business logic." },
+      "cloud": { "title": "Cloud & DevOps", "text": "Containers, orchestration, IaC and delivery pipelines." },
+      "infra": { "title": "Infrastructure & Monitoring", "text": "Private cloud, observability and resilience testing." },
+      "data": { "title": "Data & Databases", "text": "Relational databases and data analysis." },
+      "tools": { "title": "Development Tools", "text": "Day-to-day engineering workflow." }
+    }
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "Selected engineering work",
+    "subtitle": "Full-stack platforms, cloud infrastructure and automation projects I designed, built and deployed.",
+    "filtersLabel": "Filter projects by category",
+    "filters": {
+      "all": "All Projects",
+      "web": "Web Development",
+      "cloud": "Cloud & DevOps"
+    },
+    "viewDetails": "View Details",
+    "github": "GitHub",
+    "liveDemo": "Live Demo",
+    "items": {
+      "intelligent-chaos-engineering": {
+        "title": "Intelligent Chaos Engineering on AKS",
+        "category": "Cloud / DevOps / AI",
+        "short": "Chaos engineering on Azure Kubernetes Service, orchestrated by an LLM through a Model Context Protocol (MCP) server.",
+        "description": "An intelligent chaos engineering solution integrating Kubernetes, Chaos Mesh, an LLM and a Model Context Protocol (MCP) server. It runs controlled failure experiments on Azure Kubernetes Service and observes the system's behaviour with Prometheus and Azure Monitor.",
+        "features": [
+          "Kubernetes chaos experimentation",
+          "Pod failure simulation",
+          "CPU and memory stress testing",
+          "Network latency simulation",
+          "Monitoring using Prometheus and Azure Monitor",
+          "Intelligent scenario orchestration using LLM and MCP"
+        ],
+        "workflow": [
+          { "title": "Plan", "text": "Scenario via LLM + MCP" },
+          { "title": "Inject", "text": "Chaos Mesh experiments" },
+          { "title": "Stress", "text": "Pods, CPU, memory, network" },
+          { "title": "Observe", "text": "Prometheus & Azure Monitor" }
+        ]
+      },
+      "openstack-cloud-infrastructure": {
+        "title": "OpenStack Cloud Infrastructure",
+        "category": "Cloud / Infrastructure / DevOps",
+        "short": "A cloud infrastructure on OpenStack, provisioned with Terraform, configured with Ansible and monitored with Prometheus and Grafana.",
+        "description": "Designed and automated a cloud infrastructure using OpenStack, Terraform and Ansible, including infrastructure provisioning, configuration automation, cloud resource management, metrics collection and monitoring dashboards.",
+        "features": [
+          "Infrastructure provisioning",
+          "Configuration automation",
+          "Cloud resource management",
+          "Metrics collection",
+          "Infrastructure monitoring dashboards"
+        ],
+        "workflow": [
+          { "title": "Provision", "text": "Terraform on OpenStack" },
+          { "title": "Configure", "text": "Ansible automation" },
+          { "title": "Collect", "text": "Prometheus metrics" },
+          { "title": "Visualize", "text": "Grafana dashboards" }
+        ]
+      },
+      "saldae-institute": {
+        "title": "Saldae Institute Website",
+        "category": "Web Development / Cloud Deployment",
+        "short": "A professional website deployed on Microsoft Azure.",
+        "description": "A professional website for Saldae Institute, deployed and hosted on Microsoft Azure.",
+        "features": ["Professional public website", "Deployment on Microsoft Azure", "Live in production"],
+        "role": "",
+        "deployment": "Deployed on Microsoft Azure."
+      },
+      "edehn": {
+        "title": "EDEHN Website",
+        "category": "Web Development / Deployment",
+        "short": "The website of EDEHN (Équipe d'Économie Le Havre Normandie), deployed on a VPS.",
+        "description": "The website of EDEHN — Équipe d'Économie Le Havre Normandie, an economics research team — deployed and hosted on a VPS (Virtual Private Server).",
+        "features": ["Web application", "Deployment on a VPS"],
+        "role": "",
+        "deployment": "Deployed on a Linux VPS: Angular build served by Nginx, which also reverse-proxies the Spring Boot API running as a systemd service."
+      },
+      "taxi-cross": {
+        "title": "Taxi Cross — Taxi Booking Platform",
+        "category": "Mobile & Web Development",
+        "short": "A two-sided taxi booking platform: two Ionic mobile apps (clients and drivers), a Laravel REST API, real-time WebSockets and an admin website.",
+        "description": "Taxi Cross is a two-sided platform that makes it easier for clients to get a taxi and for drivers to find passengers quickly. It was built as the final-year project of my Bachelor's degree in Big Data & Data Analysis (ISIMS, University of Sfax) during an internship at Web Vue, a Sfax-based software agency. It includes a client mobile app, a driver mobile app and an administration website, all backed by a Laravel REST API and a Soketi WebSocket server for real-time updates.",
+        "features": [
+          "Driver app: accept or cancel ride requests, view client positions on a map, follow the route and call the client",
+          "Client app: choose a destination, book a simple (+2 DT) or urgent (+3 DT) ride, 3-minute search countdown",
+          "Sign-up with SMS one-time password (OTP) verification",
+          "Real-time ride requests and updates through WebSockets (Soketi)",
+          "Interactive map with Leaflet and OpenStreetMap",
+          "Driver balance, top-up history and referral program (balance credited for each 10 referred users)",
+          "Ride history and complaints for clients and drivers",
+          "Admin website: manage drivers, clients, rides, complaints and balance top-ups, with a statistics dashboard"
+        ],
+        "workflow": [
+          {
+            "title": "Book",
+            "text": "Client sets destination & ride type"
+          },
+          {
+            "title": "Broadcast",
+            "text": "Request pushed to drivers via WebSockets"
+          },
+          {
+            "title": "Accept",
+            "text": "Driver accepts, calls client, follows route"
+          },
+          {
+            "title": "Manage",
+            "text": "Admin dashboard, balances & complaints"
+          }
+        ],
+        "role": "Final-year project of my Bachelor's in Big Data (ISIMS Sfax), built in a two-person team with Yosri Njeh during an internship at Web Vue (Feb–May 2023), following Scrum: design (UML), mobile apps, REST API and admin website."
+      },
+      "ija-nahkiw": {
+        "title": "IjaNahkiw — Mental Health Platform",
+        "category": "Full-Stack Web Development",
+        "short": "A Symfony platform connecting patients with therapists: consultations, medical records, activities, forum and chatbot.",
+        "description": "IjaNahkiw (\"come, let's talk\") is a mental-health and wellbeing web platform built with Symfony as a team project at ESPRIT. Patients can book consultations with therapists, follow wellbeing programmes and activities, take questionnaires and talk to a chatbot, while therapists and administrators manage everything from a back-office dashboard.",
+        "features": [
+          "Therapist consultations with calendar, search and sorting",
+          "Medical records (fiches) with PDF export",
+          "Wellbeing programmes, activities and exercises",
+          "Community forum: publications, comments and likes",
+          "Questionnaires and a support chatbot",
+          "Admin dashboard with statistics and charts",
+          "Sign-up with email verification, password reset and reCAPTCHA",
+          "Real-time updates with Mercure"
+        ],
+        "workflow": [
+          { "title": "Sign up", "text": "Verified account" },
+          { "title": "Choose", "text": "Therapist & programme" },
+          { "title": "Consult", "text": "Book a session" },
+          { "title": "Follow up", "text": "Records & activities" }
+        ],
+        "role": "Team project (Projet Intégré) at ESPRIT, built with five other students."
+      },
+      "tp-foyer": {
+        "title": "ESPRIT University Housing Management",
+        "category": "Back-End Development",
+        "short": "A Spring Boot REST API built at ESPRIT to manage universities, residences, rooms, students and reservations.",
+        "description": "Developed at ESPRIT, a layered Spring Boot REST API (controllers, services, repositories) for managing university student residences: universities, residences (foyers), blocks, rooms, students and room reservations, persisted in MySQL with Spring Data JPA.",
+        "features": [
+          "REST endpoints for universities, residences, blocks and rooms",
+          "Student management and room reservations",
+          "Room types and JPA entity relationships",
+          "Layered architecture: controller → service → repository"
+        ],
+        "workflow": [
+          { "title": "Controller", "text": "REST endpoints" },
+          { "title": "Service", "text": "Business logic" },
+          { "title": "Repository", "text": "Spring Data JPA" },
+          { "title": "Database", "text": "MySQL" }
+        ],
+        "role": "Academic project at ESPRIT (School of Engineering): design and development of the back-end API."
+      },
+      "housing-soa": {
+        "title": "Housing & Appointments Web Services",
+        "category": "SOA / Web Services",
+        "short": "JAX-RS RESTful services for housing listings and visit appointments.",
+        "description": "A service-oriented Java application exposing RESTful web services with JAX-RS to manage housing listings (logements) and visit appointments (rendez-vous), with separate resource and business layers.",
+        "features": [
+          "CRUD REST resources for housing listings",
+          "Appointment scheduling resources",
+          "Separate resource and business layers",
+          "Maven build"
+        ]
+      },
+      "airport-management": {
+        "title": "Airport Management",
+        "category": "Software Development (.NET)",
+        "short": "A C# .NET application modelling flights, planes, passengers and staff.",
+        "description": "A C# .NET solution split into an application core (domain, interfaces, services) and a console UI. It models flights, planes, passengers, travellers and staff, and queries flight data with LINQ and extension methods.",
+        "features": [
+          "Domain model: flights, planes, passengers, staff",
+          "Flight queries with LINQ",
+          "Interfaces, services and extension methods",
+          "Layered solution: ApplicationCore + console UI"
+        ]
+      }
+    }
+  },
+  "details": {
+    "overview": "Overview",
+    "features": "Key features",
+    "tech": "Technology stack",
+    "workflow": "Workflow",
+    "gallery": "Application screenshots",
+    "architecture": "Architecture",
+    "video": "Video demonstration",
+    "role": "Role & contributions",
+    "deployment": "Deployment",
+    "galleryPlaceholder": "Application screenshot",
+    "architecturePlaceholder": "Architecture diagram",
+    "videoPlaceholder": "Demo video",
+    "visit": "Visit Live Website",
+    "category": "Category",
+    "others": "Other projects"
+  },
+  "demos": {
+    "eyebrow": "Live demos",
+    "title": "Explore My Work",
+    "subtitle": "Real websites I developed and deployed — open them and explore them live.",
+    "visit": "Visit Website",
+    "preview": "Fullscreen preview",
+    "watch": "Watch the demo",
+    "details": "Project Details",
+    "iframeNote": "Live preview — some websites block embedding. If it stays blank, open the website directly.",
+    "noPreview": "No preview available yet."
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Professional journey",
+    "subtitle": "Hands-on engineering experience across software, cloud and DevOps.",
+    "related": "Related project",
+    "items": {
+      "insomea": {
+        "role": "Engineering Internship (Final-Year Project) — Cloud & DevOps",
+        "description": "Designed and built ChaosOps, an intelligent chaos engineering platform for Azure Kubernetes Service.",
+        "highlights": [
+          "Chaos experiments on Azure AKS with Chaos Mesh",
+          "CPU, memory and pod-failure scenarios",
+          "Prometheus monitoring and metrics dashboards",
+          "Automated post-injection analysis reports (PDF)",
+          "Spring Boot API with the Kubernetes Java client",
+          "Angular dashboard"
+        ]
+      }
+    }
+  },
+  "resume": {
+    "eyebrow": "Resume",
+    "title": "My resume",
+    "subtitle": "A concise overview of my education and specialties. Download the full PDF version below.",
+    "preview": "Preview",
+    "education": "Education",
+    "educationItems": [
+      "Engineering degree — specialization in Cloud Computing & DevOps",
+      "Academic background in Big Data"
+    ],
+    "specialties": "Main specialties",
+    "specialtyItems": ["Cloud Engineering (Azure)", "Kubernetes & containers", "CI/CD & automation", "Full-stack development", "Chaos engineering"],
+    "experience": "Experience",
+    "experienceItem": "INSOMEA — Engineering Internship (Chaos Engineering on AKS)"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's Build Something Great Together.",
+    "subtitle": "Open to discussing software development, Cloud Engineering, DevOps and Platform Engineering opportunities.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "Location",
+    "locationValue": "Tunisia",
+    "opportunities": "Professional opportunities",
+    "opportunitiesValue": "Software Development · Cloud · DevOps · Platform Engineering",
+    "form": {
+      "title": "Send me a message",
+      "name": "Your name",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "Jane Doe",
+      "subjectPlaceholder": "Opportunity, project, question…",
+      "messagePlaceholder": "Hello Eya, …",
+      "submit": "Open in my email app",
+      "note": "This opens your default email application with the message pre-filled — nothing is sent from this website.",
+      "disabled": "The email address will be added soon."
+    }
+  },
+  "footer": {
+    "tagline": "Cloud & DevOps Engineer · Full-Stack Software Developer",
+    "rights": "All rights reserved.",
+    "built": "Built with React, TypeScript, Tailwind CSS & Motion.",
+    "top": "Back to top"
+  }
+}
